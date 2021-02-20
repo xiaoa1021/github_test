@@ -1,6 +1,15 @@
 #include "stdio.h"
+#include "stdint.h"
+#include "unistd.h"
+
 int main(void)
 {
-    printf("hello,gcc!\n");
+  int32_t i=0;
+
+  while(1)
+    {
+	printf("%d,hello,gcc!\n",i++);
+	sleep(2);
+    }
     return 0;
 }
